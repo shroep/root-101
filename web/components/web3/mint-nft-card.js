@@ -2,7 +2,7 @@ import { Button, Card, CardActions, CardContent, Input, Typography } from '@mui/
 import Image from 'next/image';
 import { Grid, Stack } from '@mui/material';
 
-const MintNFTCard = ({title, description, action, canMint, showNumToMint, setNumToMint, mintStatus}) => {
+const MintNFTCard = ({ title, description, amount, total, action, canMint, showNumToMint, setNumToMint, mintStatus}) => {
   const handleChange = (event) => {
     const numToMint = parseInt(event.target.value);
     setNumToMint(numToMint);

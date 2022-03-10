@@ -5,12 +5,8 @@ import { mintGift, mintPublic, mintWhitelist, sampleNFT } from '@pages/utils/_we
 import MintNFTCard from './mint-nft-card';
 import useSWR from 'swr';
 import Web3 from 'web3';
-
-import { Container } from '@mui/material';
-import styles from '../../styles/Home.module.css';
-import { Button, Card, CardActions, CardContent, Input, Box, Typography } from '@mui/material';
 import Image from 'next/image';
-import profilePic from '/public/draft-3.png'
+
 
 const NOT_CLAIMABLE = 0;
 const ALREADY_CLAIMED = 1;
