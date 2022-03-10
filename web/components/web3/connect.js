@@ -122,6 +122,7 @@ export default function Connect() {
 }
 
 const CustomButton = muiStyled(Button)(({ theme }) => ({
+  backgroundColor: '#8b0000',
   borderRadius: '20px',
   height: '45px',
   fontSize: '1.2rem',
@@ -135,6 +136,7 @@ const CustomButton = muiStyled(Button)(({ theme }) => ({
 }));
 
 const Connected = muiStyled(Button)(({ theme }) => ({
+  backgroundColor: '#8b0000',
   borderRadius: '20px',
   height: '45px',
   fontSize: '1.1rem',
