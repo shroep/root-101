@@ -24,38 +24,51 @@ export const navLinks = [
 const Header = () => {
   return (
     <>
-    {/* <HideOnScroll> */}
-        <AppBar position="fixed" sx={{ backgroundColor: '#FFFFFF' }} elevation={0}>
-          <Toolbar>
-            <Container
-              maxWidth="lg"
-              sx={{ display: `flex`, justifyContent: `space-between`, alignItems: 'center' }}
-            >
-              <IconButton edge="start" aria-label="home">
-                <MuiNextLink activeClassName="active" href='/'>
-                  <BubbleChartTwoToneIcon
-                    sx={{
-                      color: (theme) => theme.palette.primary,
-                    }}
-                    fontSize="large"
-                  />
-                </MuiNextLink>
-              </IconButton>
-              <Stack direction="row" alignItems='center'>
-                <Navbar navLinks={navLinks} />
-                <SideDrawer navLinks={navLinks} />
-                <Connect />
-              </Stack>
-            </Container>
-          </Toolbar>
-        </AppBar>
-      {/* </HideOnScroll> */}
-      <Offset id="back-to-top-anchor" />
-      <BackToTop>
-        <Fab color="primary" size="large" aria-label="back to top">
-          <KeyboardArrowUp />
-        </Fab>
-      </BackToTop>
+          {/* <HideOnScroll> */}
+          <AppBar position="fixed" sx={{ backgroundColor: '#0b0b0b' }} elevation={0}>
+              <Toolbar>
+                  <Container maxWidth="lg" sx={{ display: `flex`, justifyContent: `space-between`, alignItems: 'center' }} >
+                      <IconButton edge="start" aria-label="home">
+                          <MuiNextLink activeClassName="active" href='/'>
+                              <BubbleChartTwoToneIcon
+                                  sx={{
+                                      color: (theme) => theme.palette.primary
+                                  }}
+                                  fontSize="large"
+                              />
+                          </MuiNextLink>
+                      </IconButton>
+
+                      <MuiNextLink
+                          sx={{ textDecoration: "none", color: 'white' }}
+                          href="https://twitter.com/TopDogCrew"
+                          target="_blank"
+                          //right="700px"
+                          rel="noopener noreferrer"
+                      //position=""
+                      >
+                          <Twitter fontSize="large" />
+                      </MuiNextLink>
+
+                      <Stack direction="row" alignItems='center'>
+                          {/* <Navbar navLinks={navLinks} />
+                <SideDrawer navLinks={navLinks} /> */}
+                          <Connect />
+                      </Stack>
+                  </Container>
+              </Toolbar>
+          </AppBar>
+          {/* </HideOnScroll> */}
+
+          <Offset id="back-to-top-anchor" />
+
+
+          <BackToTop>
+              <Fab color="primary" size="large" aria-label="back to top">
+                  <KeyboardArrowUp />
+              </Fab>
+          </BackToTop>
+
     </>
   );
 };

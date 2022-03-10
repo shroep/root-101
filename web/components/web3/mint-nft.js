@@ -127,38 +127,32 @@ const MintNFT = () => {
   return (
     <>
       <Stack id="demo">
-        <h2>Mint an NFT</h2>
-        <Grid container spacing={3} justifyContent="center" alignItems="center">
-          <Grid item>
-            <MintNFTCard
-              title={'Gift Mint'}
-              description={'Mint this sample NFT to the connected wallet. Must be on gift whitelist.'}
-              canMint={giftClaimable}
-              mintStatus={giftMintStatus}
-              action={onMintGift}
-            />
-          </Grid>
-          <Grid item>
-            <MintNFTCard
-              title={'Whitelist Mint'}
-              description={'Mint this sample NFT to the connected wallet. Must be on whitelist. Cost: 0.01 ETH'}
-              canMint={whitelistClaimable}
-              mintStatus={whitelistMintStatus}
-              action={onMintWhitelist}
-            />
-          </Grid>
-          <Grid item>
-            <MintNFTCard
-              title={'Public Mint'}
-              description={'Mint this sample NFT to the connected wallet. Open for any wallet to mint. Cost: 0.02 ETH'}
-              canMint={active}
-              mintStatus={publicMintStatus}
-              showNumToMint={true}
-              setNumToMint={setNumToMint}
-              action={onPublicMint}
-            />
-          </Grid>
-        </Grid>
+              <h2>Mint Your NFT!</h2>
+
+              <Grid container spacing={3} direction="row" /* justifyContent="center" */ alignItems="left" bgcolor="black" paddingRight={3} width="100%">
+
+                  <Grid item lg={6}>
+                      <Image alt="sample NFT" src='/sample-nft.png' width={500} height={500} />
+                  </Grid>
+
+
+                  <Grid item lg={6}>
+                      <MintNFTCard
+                          title={'Public Mint'}
+                          description={'Open to everyone'}
+
+
+                          amount={'Amount: '}
+                          total={'Total: '}
+
+                          canMint={active}
+                          mintStatus={publicMintStatus}
+                          showNumToMint={true}
+                          setNumToMint={setNumToMint}
+                          action={onPublicMint}
+                      />
+                  </Grid>
+              </Grid>
       </Stack>
     </>
   );
