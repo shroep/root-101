@@ -134,7 +134,7 @@ const MintNFT = () => {
               <Grid container spacing={3} direction="row" /* justifyContent="center" */ alignItems="left" bgcolor="black" paddingRight={3} width="100%">
 
                   <Grid item lg={6}>
-                      <Image alt="sample NFT" src='/sample-nft.png' width={500} height={500} />
+                      <Image alt="sample NFT" src='/Ddog.jpg' width={500} height={500} />
                   </Grid>
 
 
