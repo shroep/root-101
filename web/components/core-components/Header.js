@@ -13,6 +13,7 @@ import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
 import BackToTop from "@components/core-components/BackToTop";
 import Connect from "@components/web3/connect";
 import { Stack } from "@mui/material";
+import { Twitter } from "@mui/icons-material";
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 

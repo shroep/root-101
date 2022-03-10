@@ -1,5 +1,8 @@
 import { Container, Grid } from '@mui/material';
 import styles from '../styles/Home.module.css';
+import { Button, Card, CardActions, CardContent, Input, Box, Typography } from '@mui/material';
+import Image from 'next/image';
+import profilePic from '/public/draft-3.png'
 
 const GetStarted = () => {
   return (

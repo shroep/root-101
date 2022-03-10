@@ -1,5 +1,6 @@
 import { Button, Card, CardActions, CardContent, Input, Typography } from '@mui/material';
 import Image from 'next/image';
+import { Grid, Stack } from '@mui/material';
 
 const MintNFTCard = ({title, description, action, canMint, showNumToMint, setNumToMint, mintStatus}) => {
   const handleChange = (event) => {
